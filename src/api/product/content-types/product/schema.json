@@ -50,6 +50,15 @@
     },
     "stock": {
       "type": "integer"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Health Supplements",
+        "Home Remedies",
+        "Personal Care",
+        "Pet Care"
+      ]
     }
   }
 }
