@@ -64,6 +64,26 @@
     },
     "notes": {
       "type": "text"
+    },
+    "refund_reason": {
+      "type": "text"
+    },
+    "refund_method": {
+      "type": "string"
+    },
+    "account_number": {
+      "type": "biginteger"
+    },
+    "proof": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     }
   }
 }

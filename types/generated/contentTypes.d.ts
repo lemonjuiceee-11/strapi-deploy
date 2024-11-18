@@ -868,6 +868,10 @@ export interface ApiOrderOrder extends Schema.CollectionType {
       ['Delivery 1', 'Delivery 2', 'Delivery 3']
     >;
     notes: Attribute.Text;
+    refund_reason: Attribute.Text;
+    refund_method: Attribute.String;
+    account_number: Attribute.BigInteger;
+    proof: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
