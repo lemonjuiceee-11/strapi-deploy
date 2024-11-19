@@ -74,7 +74,18 @@
     "account_number": {
       "type": "biginteger"
     },
-    "proof": {
+    "refund_proof": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "delivery_proof": {
       "type": "media",
       "multiple": true,
       "required": false,

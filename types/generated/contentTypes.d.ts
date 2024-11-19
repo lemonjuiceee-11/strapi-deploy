@@ -871,7 +871,14 @@ export interface ApiOrderOrder extends Schema.CollectionType {
     refund_reason: Attribute.Text;
     refund_method: Attribute.String;
     account_number: Attribute.BigInteger;
-    proof: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    refund_proof: Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    delivery_proof: Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
