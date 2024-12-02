@@ -95,6 +95,16 @@
         "videos",
         "audios"
       ]
+    },
+    "payment_proof": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }

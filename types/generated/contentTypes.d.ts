@@ -879,6 +879,10 @@ export interface ApiOrderOrder extends Schema.CollectionType {
       'images' | 'files' | 'videos' | 'audios',
       true
     >;
+    payment_proof: Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
